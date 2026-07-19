@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — MEDTACT</title>
+<meta name="description" content="Contactează MEDTACT pentru un curs de prim ajutor, individual sau pentru firmă. Telefon, email și formular de cerere ofertă.">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-cropped.png" alt="MEDTACT">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="cursuri.html">Cursuri</a></li>
+        <li><a href="firme.html">Pentru firme</a></li>
+        <li><a href="despre.html">Despre</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Meniu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <h1>Scrie-mi direct</h1>
+    <p>Răspund eu personal, nu un formular automat. Spune-mi ce ai nevoie și revin cu un răspuns clar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div>
+        <h2>Cerere curs sau ofertă</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-row-2">
+            <div>
+              <label for="nume">Nume</label>
+              <input type="text" id="nume" name="Nume" required>
+            </div>
+            <div>
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="Telefon" required>
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <div>
+            <label for="tip">Mă interesează</label>
+            <select id="tip" name="Tip solicitare">
+              <option>Curs pentru persoană fizică</option>
+              <option>Curs pentru firmă / angajați</option>
+              <option>Verificare certificat</option>
+              <option>Altceva</option>
+            </select>
+          </div>
+          <div>
+            <label for="mesaj">Mesaj</label>
+            <textarea id="mesaj" name="Mesaj" placeholder="Număr de persoane, oraș, perioadă preferată etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Trimite</button>
+          <p class="form-status" style="font-size:0.85rem;color:var(--gray);"></p>
+        </form>
+      </div>
+
+      <div>
+        <h2>Date de contact</h2>
+        <div class="card" style="margin-bottom:16px;">
+          <h3>Telefon</h3>
+          <p><a href="tel:0790383235">0790 383 235</a></p>
+        </div>
+        <div class="card" style="margin-bottom:16px;">
+          <h3>Email</h3>
+          <p><a href="mailto:tuguidaniasi@gmail.com">tuguidaniasi@gmail.com</a></p>
+        </div>
+        <div class="card" style="margin-bottom:16px;">
+          <h3>Website</h3>
+          <p><a href="https://medtact.ro">medtact.ro</a></p>
+        </div>
+        <div class="card">
+          <h3>Zonă de activitate</h3>
+          <p>Iași, cu deplasare la sediul firmei oriunde e nevoie, în funcție de grup și distanță.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="verify-box">
+      <h3>Ai deja un certificat MEDTACT?</h3>
+      <p>Verifică-l online, introducând seria de pe document.</p>
+      <a href="https://tuguidaniasi-wq.github.io/medtact-verify/" class="btn btn-outline-dark" target="_blank" rel="noopener">Verifică certificatul →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/logo-cropped.png" alt="MEDTACT" style="height:36px;margin-bottom:12px;">
+        <p>Cursuri de prim ajutor pentru persoane fizice și juridice. Trainer: Dan Țugui, Iași.</p>
+      </div>
+      <div>
+        <h4>Navigare</h4>
+        <ul>
+          <li><a href="cursuri.html">Cursuri</a></li>
+          <li><a href="firme.html">Pentru firme</a></li>
+          <li><a href="despre.html">Despre</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0790383235">0790 383 235</a></li>
+          <li><a href="mailto:tuguidaniasi@gmail.com">tuguidaniasi@gmail.com</a></li>
+          <li>Iași, România</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MEDTACT — Țugui Dan, CUI 53999242</span>
+      <span>Certificatele emise nu reprezintă calificare profesională acreditată</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
