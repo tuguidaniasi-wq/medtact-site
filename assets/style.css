@@ -168,6 +168,12 @@ nav.main-nav a:hover {
   overflow: hidden;
 }
 
+.hero.hero-photo {
+  background-image: linear-gradient(100deg, rgba(23,24,26,0.96) 0%, rgba(23,24,26,0.88) 38%, rgba(23,24,26,0.55) 100%), url("hero-cpr-training.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+
 .hero .wrap { position: relative; z-index: 2; }
 
 .eyebrow {
@@ -418,6 +424,12 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
 }
 .page-hero h1 { margin-bottom: 8px; }
 .page-hero p { color: #c9cacc; margin: 0; }
+
+.page-hero.page-hero-photo {
+  background-image: linear-gradient(100deg, rgba(23,24,26,0.94) 0%, rgba(23,24,26,0.85) 45%, rgba(23,24,26,0.5) 100%), var(--hero-photo);
+  background-size: cover;
+  background-position: center 30%;
+}
 
 /* Certificate verify box */
 
