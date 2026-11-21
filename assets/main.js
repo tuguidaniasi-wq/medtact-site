@@ -74,3 +74,78 @@ document.addEventListener("DOMContentLoaded", function () {
   }, { threshold: 0.6 });
   nums.forEach(function (n) { io.observe(n); });
 })();
+
+/* Antet care se strânge la derulare */
+(function () {
+  var h = document.querySelector(".site-header");
+  if (!h) return;
+  function on() { h.classList.toggle("scrolled", window.scrollY > 24); }
+  on(); window.addEventListener("scroll", on, { passive: true });
+})();
+
+/* Apariție la derulare, o singură dată pe element */
+(function () {
+  if (!("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var sel = ".section-head, .box, .card, .course-card, .gallery figure, .stats, .verify-box, .fm, .portrait";
+  var els = document.querySelectorAll(sel);
+  if (!els.length) return;
+  document.documentElement.classList.add("js-reveal");
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      en.target.classList.add("in"); io.unobserve(en.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  els.forEach(function (el) {
+    if (el.closest(".hero")) return;
+    var sibs = el.parentElement ? Array.prototype.indexOf.call(el.parentElement.children, el) : 0;
+    el.style.transitionDelay = Math.min(sibs, 4) * 70 + "ms";
+    el.classList.add("reveal"); io.observe(el);
+  });
+})();
+
+/* Primele minute: pași cu taste săgeți și bară de progres */
+(function () {
+  var root = document.querySelector("[data-steps]");
+  if (!root) return;
+  var tabs = root.querySelectorAll('[role="tab"]'), bar = root.querySelector(".fm-progress i");
+  function show(i) {
+    tabs.forEach(function (t, k) {
+      var sel = k === i;
+      t.setAttribute("aria-selected", sel ? "true" : "false");
+      t.tabIndex = sel ? 0 : -1;
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !sel;
+    });
+    if (bar) bar.style.width = ((i + 1) / tabs.length * 100) + "%";
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { show(i); });
+    t.addEventListener("keydown", function (e) {
+      var n = e.key === "ArrowRight" ? i + 1 : e.key === "ArrowLeft" ? i - 1 : null;
+      if (n === null) return;
+      n = (n + tabs.length) % tabs.length; show(n); tabs[n].focus(); e.preventDefault();
+    });
+  });
+})();
+
+/* Galerie: fotografia se mărește la apăsare */
+(function () {
+  var dlg = document.querySelector(".lightbox");
+  var figs = document.querySelectorAll(".gallery figure");
+  if (!dlg || !figs.length || typeof dlg.showModal !== "function") return;
+  var img = dlg.querySelector("img"), cap = dlg.querySelector("p");
+  figs.forEach(function (f) {
+    f.tabIndex = 0;
+    function open() {
+      var i = f.querySelector("img");
+      img.src = i.src; img.alt = i.alt;
+      cap.textContent = f.querySelector("figcaption") ? f.querySelector("figcaption").textContent : "";
+      dlg.showModal();
+    }
+    f.addEventListener("click", open);
+    f.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
+  });
+  dlg.querySelector(".lightbox-close").addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+})();
