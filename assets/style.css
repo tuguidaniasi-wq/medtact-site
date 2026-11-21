@@ -439,3 +439,8 @@ form.contact-form textarea { min-height: 130px; resize: vertical; }
   padding: 24px;
   background: #fff7f8;
 }
+
+/* Titluri pe telefon: nu depășesc ecranul */
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; overflow-wrap: break-word; }
+}

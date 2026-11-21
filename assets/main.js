@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       var mailto = "mailto:tuguidaniasi@gmail.com?subject=" + subject + "&body=" + encodeURIComponent(body.join("\n"));
       window.location.href = mailto;
-      if (status) status.textContent = "Se deschide clientul tău de email cu datele completate.";
+      if (status) status.textContent = "Se deschide aplicația de email cu datele completate.";
     });
   }
 });
