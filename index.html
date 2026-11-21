@@ -20,8 +20,6 @@
 <meta name="twitter:description" content="Cursuri de prim ajutor cu simulări reale, nu PowerPoint. Pentru persoane fizice și firme, susținute de Dan Țugui, formator și trainer medical în Iași.">
 <meta name="twitter:image" content="https://medtact.ro/assets/og-image.png">
 <link rel="icon" href="assets/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">
 {
@@ -69,12 +67,81 @@
 
 <section class="hero hero-photo">
   <div class="wrap">
-    <p class="eyebrow">Formare prim ajutor — Iași și la sediul firmei</p>
-    <h1>Dacă cineva cade lângă dumneavoastră, știți exact ce aveți de făcut?</h1>
-    <p class="lead">Majoritatea oamenilor intră în panică și pierd secundele care contează. La MEDTACT exersați pe manechine, nu pe slide-uri, până când reflexul rămâne în corp, nu în notițe.</p>
-    <div class="btn-row">
-      <a href="cursuri.html" class="btn btn-primary">Vezi cursurile</a>
-      <a href="firme.html" class="btn btn-outline">Curs pentru firma mea</a>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Cursuri de prim ajutor în Iași și la sediul firmei</p>
+        <h1>Dacă cineva cade lângă dumneavoastră, știți exact ce aveți de făcut?</h1>
+        <p class="lead">Majoritatea oamenilor intră în panică și pierd secundele care contează. La MEDTACT exersați pe manechine, nu pe slide-uri, până când reflexul rămâne în corp, nu în notițe.</p>
+        <div class="btn-row">
+          <a href="cursuri.html" class="btn btn-primary">Vezi cursurile</a>
+          <a href="firme.html" class="btn btn-outline">Curs pentru firma mea</a>
+        </div>
+      </div>
+      <aside class="metronome" id="metronom" aria-labelledby="metronom-titlu">
+        <h2 id="metronom-titlu">Ritmul care salvează o viață</h2>
+        <p>Porniți metronomul și bateți ritmul cu palma pe masă. Exact așa exersăm compresiile toracice la curs.</p>
+        <div class="pulse-stage" aria-hidden="true">
+          <span class="pulse-ring"></span>
+          <div class="pulse"><div><b>110</b><small>pe minut</small></div></div>
+        </div>
+        <div class="metro-facts">
+          <div><strong>100–120</strong><span>compresii pe minut</span></div>
+          <div><strong>5–6 cm</strong><span>adâncime la adult</span></div>
+          <div><strong>30:2</strong><span>compresii și ventilații</span></div>
+        </div>
+        <button type="button" class="btn btn-primary" id="metronom-btn" aria-pressed="false">Pornește metronomul</button>
+        <p class="metro-source">Valori pentru adult, conform ghidurilor ERC 2025 de suport vital de bază.</p>
+      </aside>
+    </div>
+  </div>
+  <svg class="ecg" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 55 H180 l14 -8 l12 8 H260 l10 18 l16 -66 l16 72 l12 -24 H430 l18 -12 l20 12 H640 l14 -8 l12 8 H700 l10 18 l16 -66 l16 72 l12 -24 H880 l18 -12 l20 12 H1200"/>
+  </svg>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><div class="num" data-count="6">6</div><div class="label">ore durează cursul de bază BLS-AED</div></div>
+      <div class="stat"><div class="num" data-count="12">12</div><div class="label">luni este valabil certificatul</div></div>
+      <div class="stat"><div class="num">2025</div><div class="label">ediția ghidurilor ERC pe care le predăm</div></div>
+      <div class="stat"><div class="num">1:1</div><div class="label">fiecare cursant lucrează pe manechin, nu doar privește</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Pentru cine ținem cursurile</h2>
+      <p>Predăm aceleași reflexe la doi oameni foarte diferiți: cel care vrea să știe ce să facă acasă și firma care trebuie să-și pregătească angajații desemnați pentru prim ajutor.</p>
+    </div>
+    <div class="bento">
+      <div class="box box-red span-3">
+        <div class="box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <h3>Persoane fizice</h3>
+        <p>Părinți, bunici, șoferi, oricine ține la cineva. Un curs de câteva ore care vă dă un plan clar pentru primele 60 de secunde ale unei urgențe: resuscitare, folosirea defibrilatorului, dezobstrucția căilor respiratorii.</p>
+        <a href="cursuri.html" class="btn btn-outline">Vezi cursurile</a>
+      </div>
+      <div class="box box-navy span-3">
+        <div class="box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h3>Firme și instituții</h3>
+        <p>Instructaj de prim ajutor pentru lucrătorii desemnați (art. 10, Legea 319/2006), la sediul firmei, pentru echipe de orice mărime, de la birou la echipaje operative.</p>
+        <a href="firme.html" class="btn btn-outline">Vezi oferta pentru firme</a>
+      </div>
+      <div class="box box-green span-2">
+        <div class="box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Defibrilatorul, folosit de mâna dumneavoastră</h3>
+        <p>Oricine poate folosi un defibrilator automat. La curs îl aplicați pe manechin, cu aparatul de antrenament, până nu mai ezitați.</p>
+      </div>
+      <div class="box box-yellow span-2">
+        <div class="box-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div>
+        <h3>Acte pentru dosarul SSM</h3>
+        <p>Certificat individual cu serie unică și fișă de prezență, pregătite pentru dosarul de securitate și sănătate în muncă.</p>
+      </div>
+      <div class="box box-photo span-2" style="background-image:url('assets/curs-firma-practica.jpg');">
+        <div class="box-caption"><h3>Pe manechine adult și sugar</h3><p>Fiecare cursant exersează, pe rând, fiecare gest.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -82,21 +149,24 @@
 <section>
   <div class="wrap">
     <div class="section-head">
-      <h2>Pentru cine ținem cursurile</h2>
-      <p>Predăm aceleași reflexe la doi oameni foarte diferiți — cel care vrea să știe ce să facă acasă și firma care trebuie să-și pregătească angajații desemnați pentru prim ajutor.</p>
+      <h2>De ce MEDTACT și nu un curs oarecare</h2>
     </div>
-    <div class="grid grid-2">
-      <div class="card">
-        <span class="tag red">Persoane fizice</span>
-        <h3>Vreau să știu ce fac dacă se întâmplă ceva</h3>
-        <p>Părinți, bunici, șoferi, oricine ține la cineva. Un curs de câteva ore care vă dă un plan clar pentru primele 60 de secunde ale unei urgențe — resuscitare, folosirea unui defibrilator, dezobstrucția căilor respiratorii.</p>
-        <a href="cursuri.html">Vezi cursurile pentru persoane fizice →</a>
+    <div class="bento">
+      <div class="box box-photo span-4" style="background-image:url('assets/curs-prezentare.jpg');background-position:65% center;">
+        <div class="box-caption"><h3>Trainer de echipamente medicale</h3><p>Dan Țugui este și trainer pentru un producător european de ambulanțe și autospeciale de intervenție. Ce se predă la curs vine din experiență cu echipamentul real, nu din manual.</p></div>
       </div>
-      <div class="card">
-        <span class="tag">Firme și instituții</span>
-        <h3>Am nevoie de instruire pentru angajați</h3>
-        <p>Instructaj de prim ajutor pentru lucrătorii desemnați (art. 10, Legea 319/2006), la sediul firmei, pentru echipe de orice mărime — de la birou la echipaje operative.</p>
-        <a href="firme.html">Vezi oferta pentru firme →</a>
+      <div class="box box-red span-2">
+        <h3>Simulări reale</h3>
+        <p>Manechine, defibrilator de antrenament, scenarii cronometrate. Cursantul repetă gestul cu mâinile lui, nu doar îl vede pe un ecran.</p>
+      </div>
+      <div class="box box-navy span-3">
+        <img src="assets/seal-medtact.png" alt="Ștampilă MEDTACT — Țugui Dan PFA" width="72" height="72" style="margin-bottom:16px;background:#fff;border-radius:50%;">
+        <h3>Certificare verificabilă</h3>
+        <p>Fiecare absolvent primește un certificat cu serie unică, verificabil online, conform ghidurilor ERC 2025.</p>
+      </div>
+      <div class="box box-green span-3">
+        <h3>Ghidurile ERC 2025</h3>
+        <p>Predăm după ediția 2025 a ghidurilor Consiliului European de Resuscitare: ritm, adâncime, raport compresii-ventilații și folosirea defibrilatorului.</p>
       </div>
     </div>
   </div>
@@ -104,23 +174,30 @@
 
 <section class="alt">
   <div class="wrap">
-    <div class="section-head center">
-      <h2>De ce MEDTACT și nu un curs oarecare</h2>
+    <div class="section-head">
+      <h2>Din sălile de curs</h2>
+      <p>Firme, echipaje de intervenție, cursanți fără pregătire medicală. Fotografii de la cursurile ținute de Dan Țugui.</p>
     </div>
-    <div class="grid grid-3">
-      <div class="card">
-        <img src="assets/simulari-reale-aed.jpg" alt="Antrenament CPR cu defibrilator (AED) pe manechin" style="width:calc(100% + 56px);height:180px;object-fit:cover;margin:-28px -28px 20px -28px;border-radius:6px 6px 0 0;">
-        <h3>Simulări reale</h3>
-        <p>Manechine, defibrilator de antrenament, scenarii cronometrate. Cursantul repetă gestul cu mâinile lui, nu doar îl vede pe un ecran.</p>
+    <div class="gallery">
+      <figure class="g-a"><img src="assets/curs-firma-rcp.jpg" alt="Cursanți care exersează compresii toracice pe manechine adult și sugar" loading="lazy"><figcaption>Compresii toracice pe manechine, curs pentru angajați</figcaption></figure>
+      <figure class="g-b"><img src="assets/grup-absolventi.jpg" alt="Grup de absolvenți la finalul cursului, cu diplomele" loading="lazy"><figcaption>Absolvenții, la finalul cursului</figcaption></figure>
+      <figure class="g-c"><img src="assets/curs-simulator-nastere.jpg" alt="Echipaj de intervenție care exersează pe un simulator de naștere" loading="lazy"><figcaption>Naștere în afara spitalului, pe simulator</figcaption></figure>
+      <figure class="g-d"><img src="assets/curs-balon-ventilatie.jpg" alt="Dan Țugui explică folosirea balonului de ventilație" loading="lazy" style="object-position:55% center;"><figcaption>Balonul de ventilație, explicat pe echipament real</figcaption></figure>
+      <figure class="g-e"><img src="assets/curs-echipaje-grup.jpg" alt="Grup de cursanți din echipajele de intervenție" loading="lazy"><figcaption>Curs pentru echipaje de intervenție</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="grid grid-2" style="align-items:center;gap:48px;">
+      <div class="section-head" style="margin-bottom:0;">
+        <h2>Certificatul contează la un control SSM</h2>
+        <p>Absolvenții primesc certificat cu serie unică (ex: MT-BLS-2026-001), verificabil online. Util pentru dosarul de securitate și sănătate în muncă al firmei, nu doar o hârtie de perete.</p>
+        <a href="firme.html" class="btn btn-primary">Cere ofertă pentru firmă</a>
       </div>
-      <div class="card">
-        <h3>Trainer de echipamente medicale</h3>
-        <p>Dan Țugui este și trainer pentru un producător european de ambulanțe și autospeciale de intervenție — ambulanțe, mașini de transport victime, elicoptere. Ce se predă la curs vine din experiență cu echipamentul real, nu din manual.</p>
-      </div>
-      <div class="card">
-        <img src="assets/seal-medtact.png" alt="Ștampilă MEDTACT — Țugui Dan PFA" width="72" height="72" style="margin-bottom:12px;">
-        <h3>Certificare verificabilă</h3>
-        <p>Fiecare absolvent primește un certificat cu serie unică, verificabil online, conform ghidurilor ERC 2025.</p>
+      <div>
+        <img src="assets/certificat-exemplu.png" alt="Exemplu de certificat MEDTACT de absolvire a cursului de prim ajutor BLS-AED" style="width:100%;height:auto;border-radius:12px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6);transform:rotate(-2deg);">
       </div>
     </div>
   </div>
@@ -128,36 +205,12 @@
 
 <section>
   <div class="wrap">
-    <div class="grid grid-4">
-      <div class="stat"><div class="num">6h</div><div class="label">durata cursului de bază BLS-AED</div></div>
-      <div class="stat"><div class="num">12</div><div class="label">luni valabilitate certificat</div></div>
-      <div class="stat"><div class="num">ERC 2025</div><div class="label">ghiduri europene aplicate</div></div>
-      <div class="stat"><div class="num">Iași</div><div class="label">deplasare la sediul firmei</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="dark">
-  <div class="wrap">
-    <div class="grid grid-2" style="align-items:center;">
-      <div class="section-head" style="margin-bottom:0;">
-        <h2>Certificatul contează la un control SSM</h2>
-        <p>Absolvenții primesc certificat cu serie unică (ex: MT-BLS-2026-001), verificabil online. Util pentru dosarul de securitate și sănătate în muncă al firmei, nu doar o hârtie de perete.</p>
-        <a href="firme.html" class="btn btn-primary">Cere ofertă pentru firmă</a>
-      </div>
-      <div>
-        <img src="assets/certificat-exemplu.png" alt="Exemplu de certificat MEDTACT de absolvire a cursului de prim ajutor BLS-AED" style="width:100%;height:auto;border-radius:8px;box-shadow:0 20px 50px rgba(0,0,0,0.4);">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="wrap">
     <div class="verify-box">
-      <h3>Verificați un certificat MEDTACT</h3>
-      <p>Fiecare certificat are o serie unică. Introduceți seria și vedeți imediat dacă documentul este valabil.</p>
-      <a href="https://tuguidaniasi-wq.github.io/medtact-verify/" class="btn btn-outline-dark" target="_blank" rel="noopener">Verifică certificatul →</a>
+      <div>
+        <h3>Verificați un certificat MEDTACT</h3>
+        <p>Fiecare certificat are o serie unică. Introduceți seria și vedeți imediat dacă documentul este valabil.</p>
+      </div>
+      <a href="https://tuguidaniasi-wq.github.io/medtact-verify/" class="btn btn-outline-dark" target="_blank" rel="noopener">Verifică certificatul</a>
     </div>
   </div>
 </section>
@@ -166,7 +219,7 @@
   <div class="wrap">
     <h2>Nu ezitați. Interveniți. Salvați vieți.</h2>
     <p>Scrieți-mi direct, vă răspund personal.</p>
-    <div class="btn-row" style="justify-content:center;">
+    <div class="btn-row">
       <a href="contact.html" class="btn btn-outline">Contact</a>
       <a href="tel:0790383235" class="btn btn-outline">Sună: 0790 383 235</a>
     </div>
