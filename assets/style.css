@@ -328,6 +328,18 @@ section.alt .card { border-color: transparent; }
 .verify-box .btn-outline-dark:hover { color: var(--yellow); }
 @media (max-width: 760px) { .verify-box { grid-template-columns: 1fr; } }
 
+/* ---------- Material descărcabil ---------- */
+.material-card {
+  display: grid; grid-template-columns: 180px 1fr; gap: 28px; align-items: center;
+  background: var(--white); border: 2px solid var(--navy); border-radius: var(--radius-l);
+  padding: 22px; color: var(--navy); text-decoration: none; max-width: 720px;
+}
+.material-card img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,30,80,.18); }
+.material-card h3 { margin: 0 0 6px; }
+.material-card p { margin: 0 0 16px; }
+.material-card:hover .btn, .material-card:focus-visible .btn { filter: brightness(1.08); }
+@media (max-width: 560px) { .material-card { grid-template-columns: 110px 1fr; gap: 16px; padding: 16px; } }
+
 /* ---------- Bandă de final ---------- */
 .cta-banner { background: var(--red); color: var(--white); text-align: center; position: relative; }
 .cta-banner::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--battenburg); }
